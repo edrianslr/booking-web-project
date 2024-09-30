@@ -1,0 +1,110 @@
+.review_container{
+    grid-template-columns: repeat(4, 260px);
+    align-items: center;
+    column-gap: 2rem;
+}
+
+.review_card{
+    background-color: var(--text-color);
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    width: 280px;
+}
+
+.review_img{
+    width: 100%;
+    height: 200px;
+    border-radius: 1.5rem;
+    justify-self: center;
+    margin-bottom: 3rem;
+}
+
+.review_star{
+    margin-bottom: 1rem;
+    color: #ffcc25;
+    font-size: var(--small-font-size);
+}
+
+.review_title{
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+    color: #000000;
+    margin-top: var(--mb-0-75);
+}
+
+.review_subtitle{
+    font-size: var(--tiny-font-size);
+    color: #000000;
+    margin-top: var(--mb-0-5);
+}
+
+.review_description{
+    padding: 0 4rem 0 0;
+    margin-bottom: var(--mb-2);
+}
+
+@media screen and (max-width: 992px) {
+    .review_container{
+        grid-template-columns: repeat(3, 273px);
+        row-gap: 2rem;
+    }
+
+    .review_img{
+        width: 220px;
+        margin-bottom: 2rem;
+    }
+
+    .review_star{
+        margin-top: 1rem;
+        color: #ffcc25;
+    }
+
+    .review_box{
+        padding: 0.75rem 0.5rem;
+    }
+
+    .review_data{
+        text-align: center;
+    }
+
+    .review_info{
+        justify-content: center;
+    }
+
+    .review_description{
+        padding: 0 5rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 776px) {
+    .review_container{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 676px) {
+    .review_container{
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 2rem;
+        justify-items: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .review_info{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .review_description{
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .review_info{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
