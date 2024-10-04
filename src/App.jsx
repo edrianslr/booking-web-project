@@ -5,6 +5,7 @@ import Home from './components/home/Home';
 import About from './components/about/About';
 import Booking from './components/booking/Booking';
 import Review from './components/review/Review';
+import Services from './components/services/Services'
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/booking" element={<Booking />} />
           <Route path="/review" element={<Review />} />
+          <Route path="/services" element={<Services />} />
         </Routes>
       </main>
     </HashRouter>

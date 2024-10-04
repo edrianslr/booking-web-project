@@ -5,6 +5,9 @@ import TruckImg from "../../assets/aboutimg/truck_delivery.png"
 import Services from "../../assets/aboutimg/customer-service.jpg"
 import Overseas from "../../assets/aboutimg/overseas.jpg"
 
+import {motion} from 'framer-motion'
+import { fadeIn } from '../../variants'
+
 function About() {
   return (
     <section className="about section" id="about">
@@ -12,7 +15,12 @@ function About() {
       <span className='section_subtitle'>Booking Introduction</span>
 
       <div className="about_container container grid">
-        <div className="about_card">
+        <motion.div 
+            variants={fadeIn("up", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className="about_card">
             <div className="about_img">
                 <img src={DeliveryImg} alt="About Image"/>
             </div>
@@ -24,9 +32,14 @@ function About() {
                     id elit. Ut at sagittis magna. Praesent sit amet nulla auctor,
                 </p>
             </div>
-        </div>
+        </motion.div>
 
-        <div className="about_card">
+        <motion.div 
+            variants={fadeIn("down", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className="about_card">
             <div className="about_img">
                 <img src={Services} alt="About Image"/>
             </div>
@@ -38,9 +51,14 @@ function About() {
                     id elit. Ut at sagittis magna. Praesent sit amet nulla auctor,
                 </p>
             </div>
-        </div>
+        </motion.div>
 
-        <div className="about_card">
+        <motion.div 
+            variants={fadeIn("up", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className="about_card">
             <div className="about_img">
                 <img src={TruckImg} alt="About Image"/>
             </div>
@@ -52,9 +70,14 @@ function About() {
                     id elit. Ut at sagittis magna. Praesent sit amet nulla auctor,
                 </p>
             </div>
-        </div>
+        </motion.div>
 
-        <div className="about_card">
+        <motion.div 
+            variants={fadeIn("down", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className="about_card">
             <div className="about_img">
                 <img src={Overseas} alt="About Image"/>
             </div>
@@ -66,7 +89,7 @@ function About() {
                     id elit. Ut at sagittis magna. Praesent sit amet nulla auctor,
                 </p>
             </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   )

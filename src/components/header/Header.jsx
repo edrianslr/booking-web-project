@@ -32,6 +32,12 @@ const Header = () => {
                         </li>
 
                         <li className="nav_item">
+                            <Link to="/services" className="nav_link">
+                                <i className='uil uil-setting nav_icon'></i> Services
+                            </Link>
+                        </li>
+
+                        <li className="nav_item">
                             <Link to="/review" className="nav_link">
                                 <i className='uil uil-comment-notes nav_icon'></i> Review
                             </Link>

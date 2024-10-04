@@ -5,6 +5,9 @@ import Girlblack from "../../assets/reviewimg/girl-black.png"
 import BoyStraight from "../../assets/reviewimg/boy-straight.png"
 import Girlimg from "../../assets/reviewimg/girl.png"
 
+import {motion} from 'framer-motion'
+import { fadeIn } from '../../variants'
+
 const Review = () => {
   return (
     <section className="review section" id="review">
@@ -12,7 +15,12 @@ const Review = () => {
       <span className='section_subtitle'>Booking Introduction</span>
 
       <div className="review_container container grid">
-        <div className="review_card">
+        <motion.div 
+            variants={fadeIn("down", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className="review_card">
             <div className="review_img">
                 <img src={Boyimg} alt="review Image"/>
             </div>
@@ -31,9 +39,14 @@ const Review = () => {
                     id elit. Ut at sagittis magna. Praesent sit amet nulla auctor,
                 </p>
             </div>
-        </div>
+        </motion.div>
 
-        <div className="review_card">
+        <motion.div 
+            variants={fadeIn("up", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className="review_card">
             <div className="review_img">
                 <img src={Girlblack} alt="review Image"/>
             </div>
@@ -52,9 +65,14 @@ const Review = () => {
                     id elit. Ut at sagittis magna. Praesent sit amet nulla auctor,
                 </p>
             </div>
-        </div>
+        </motion.div>
 
-        <div className="review_card">
+        <motion.div 
+            variants={fadeIn("down", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className="review_card">
             <div className="review_img">
                 <img src={BoyStraight} alt="review Image"/>
             </div>
@@ -73,9 +91,14 @@ const Review = () => {
                     id elit. Ut at sagittis magna. Praesent sit amet nulla auctor,
                 </p>
             </div>
-        </div>
+        </motion.div>
 
-        <div className="review_card">
+        <motion.div 
+            variants={fadeIn("up", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className="review_card">
             <div className="review_img">
                 <img src={Girlimg} alt="review Image"/>
             </div>
@@ -94,7 +117,7 @@ const Review = () => {
                     id elit. Ut at sagittis magna. Praesent sit amet nulla auctor,
                 </p>
             </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   )

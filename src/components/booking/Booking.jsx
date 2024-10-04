@@ -1,6 +1,8 @@
 import React from 'react'
 import "./booking.css"
 import Robot from "../../assets/robot.png"
+import {motion} from 'framer-motion'
+import { fadeIn } from '../../variants'
 
 const Booking = () => {
   return (
@@ -9,8 +11,13 @@ const Booking = () => {
         <span className='section_subtitle'>Booking Introduction</span>
 
         <img src={Robot} alt="" className='booking_robot' />
-
-        <div className="booking_container container grid">
+        
+        <motion.div 
+            variants={fadeIn("right", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className="booking_container container grid">
           <h1 className="booking_title">Booking Form</h1>
           <form className="booking_form">
             <div className="form_group-name">
@@ -108,7 +115,7 @@ const Booking = () => {
             Book now
             </button>
           </form>
-        </div>
+        </motion.div>
     </section>
   )
 }
