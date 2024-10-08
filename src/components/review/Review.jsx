@@ -1,103 +1,36 @@
-import React from 'react'
-import "./review.css"
-import Boyimg from "../../assets/reviewimg/boy.png"
-import Girlblack from "../../assets/reviewimg/girl-black.png"
-import BoyStraight from "../../assets/reviewimg/boy-straight.png"
-import Girlimg from "../../assets/reviewimg/girl.png"
+import React from 'react';
+import './review.css'; // Ensure this CSS file exists and is correctly styled
 
 const Review = () => {
-  return (
-    <section className="review section" id="review">
-      <h2 className="section_title">Customer Review</h2>
-      <span className='section_subtitle'>Booking Introduction</span>
+    return (
+        <section className="review section" id="review">
+            <h2 className="section_title">Customer Feedback</h2>
+            <span className="section_subtitle">Introducing Our New Company</span>
 
-      <div className="review_container container grid">
-        <div className="review_card">
-            <div className="review_img">
-                <img src={Boyimg} alt="review Image"/>
-            </div>
-            <div className="review_info">
-                <h1 className="review_title">Juan Carlos</h1>
-                <p className="review_star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half"></i>
+            <div className="review_container container">
+                <p className="intro_text">
+                    As a newly established company, we are committed to delivering outstanding digital solutions tailored to your needs. 
+                    At this moment, we do not have customer reviews to showcase, but we are dedicated to building a reputation for quality and excellence.
                 </p>
-                <p className="review_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
-                    amet nulla auctor, vestibulum magna sed, convallis ex. Cum sociis nato
-                    quia nonummy nibh
-                    id elit. Ut at sagittis magna. Praesent sit amet nulla auctor,
-                </p>
-            </div>
-        </div>
 
-        <div className="review_card">
-            <div className="review_img">
-                <img src={Girlblack} alt="review Image"/>
-            </div>
-            <div className="review_info">
-                <h1 className="review_title">Jessica Fyang</h1>
-                <p className="review_star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </p>
-                <p className="review_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
-                    amet nulla auctor, vestibulum magna sed, convallis ex. Cum sociis nato
-                    quia nonummy nibh
-                    id elit. Ut at sagittis magna. Praesent sit amet nulla auctor,
-                </p>
-            </div>
-        </div>
+                <div className="discount_offer">
+                    <h3 className="offer_title">Exclusive Offer for Our First Customers</h3>
+                    <p className="offer_text">
+                        To celebrate our launch, we are offering an exclusive <strong>25% discount</strong> on the total price for the first five websites purchased. 
+                        This is a limited-time opportunity to experience our services at a reduced rate while we work diligently to earn your trust.
+                    </p>
+                </div>
 
-        <div className="review_card">
-            <div className="review_img">
-                <img src={BoyStraight} alt="review Image"/>
+                <div className="writing_slots">
+                    <h3 className="thoughts_title">Your Thoughts Matter</h3>
+                    <p className="thoughts_text">
+                        We value your input and look forward to your feedback as we grow. If you have any questions or would like to discuss your project, 
+                        please don't hesitate to get in touch with us!
+                    </p>
+                </div>
             </div>
-            <div className="review_info">
-                <h1 className="review_title">Cardo Dalisay</h1>
-                <p className="review_star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </p>
-                <p className="review_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
-                    amet nulla auctor, vestibulum magna sed, convallis ex. Cum sociis nato
-                    quia nonummy nibh
-                    id elit. Ut at sagittis magna. Praesent sit amet nulla auctor,
-                </p>
-            </div>
-        </div>
-
-        <div className="review_card">
-            <div className="review_img">
-                <img src={Girlimg} alt="review Image"/>
-            </div>
-            <div className="review_info">
-                <h1 className="review_title">kim Berly</h1>
-                <p className="review_star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half"></i>
-                </p>
-                <p className="review_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
-                    amet nulla auctor, vestibulum magna sed, convallis ex. Cum sociis nato
-                    quia nonummy nibh
-                    id elit. Ut at sagittis magna. Praesent sit amet nulla auctor,
-                </p>
-            </div>
-        </div>
-      </div>
-    </section>
-  )
+        </section>
+    );
 }
 
-export default Review
+export default Review;

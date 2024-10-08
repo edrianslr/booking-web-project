@@ -2,9 +2,9 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 import './App.css';
 import Header from './components/header/Header';
 import Home from './components/home/Home';
-import About from './components/about/About';
-import Booking from './components/booking/Booking';
+import Contact from './components/contact/Contact';
 import Review from './components/review/Review';
+import Pricing from "./components/Pricing/Pricing"; // Correct import for Pricing
 
 const App = () => {
   return (
@@ -13,8 +13,8 @@ const App = () => {
       <main className='main'>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/booking" element={<Booking />} />
+          <Route path="/pricing" element={<Pricing />} /> {/* Updated route for Pricing */}
+          <Route path="/contact" element={<Contact />} /> {/* Contact route */}
           <Route path="/review" element={<Review />} />
         </Routes>
       </main>

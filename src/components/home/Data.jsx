@@ -1,22 +1,23 @@
-import React from 'react'
+import React from 'react';
 
 const Data = () => {
   return (
     <div className="home_data">
-        <h1 className="home_title">Experience a new dimension of booking technology
-        </h1>
+      <h1 className="home_title">
+        Experience next-level web development
+      </h1>
 
-        <p className="home_description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus totam est cumque, esse ea ab mollitia earum ut sit corporis ipsum, qui reprehenderit sint nobis, sed illo fugiat! Alias, amet.</p>
+      <p className="home_description">
+        Welcome to Virzentuous, a startup dedicated to providing exceptional web development and design services at competitive prices.
+      </p>
 
-        <a href="#" className="button button--flex">Book now 
-            <i className="fa-solid fa-truck-fast button_icon"></i>
-        </a>
+      <a href="#contact" className="button button--flex">
+        Contact Us
+      </a>
 
-        <a href="#" className="btn btn--flex">Learn more
-            <i className="fa-solid fa-arrow-right button_icon"></i>
-        </a>
+      {/* "Learn More" link has been removed */}
     </div>
-  )
-}
+  );
+};
 
-export default Data
+export default Data;

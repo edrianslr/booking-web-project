@@ -1,110 +1,107 @@
-.review_container{
-    grid-template-columns: repeat(4, 260px);
-    align-items: center;
-    column-gap: 2rem;
+/* Section Styling */
+.review {
+    padding: 4rem 0;
+    text-align: center;
+    background-color: transparent; /* Set background to transparent */
 }
 
-.review_card{
-    background-color: var(--text-color);
-    border: none;
-    border-radius: 10px;
-    padding: 20px;
-    width: 280px;
+.section_title {
+    font-size: 2.5rem;
+    color: #ffffff; /* White color for title */
+    margin-bottom: 1.5rem;
 }
 
-.review_img{
-    width: 100%;
-    height: 200px;
-    border-radius: 1.5rem;
-    justify-self: center;
+.section_subtitle {
+    font-size: 1.2rem;
+    color: #ffffff; /* White color for subtitles */
     margin-bottom: 3rem;
 }
 
-.review_star{
+.review_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem; /* Reduced gap between elements */
+    overflow: hidden; /* Prevents scrolling */
+}
+
+/* Intro Text */
+.intro_text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #ffffff; /* White color for intro text */
+    max-width: 800px;
+    margin: 0 0 2rem; /* Reduced bottom margin */
+    text-align: left;
+}
+
+/* Discount Offer Styling */
+.discount_offer {
+    background-color: #ffffff; /* Keeping discount offer background white for contrast */
+    border: 1px solid #ddd;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 800px;
+    text-align: left;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 1rem; /* Added top margin */
+}
+
+.offer_title {
+    font-size: 1.5rem;
+    color: #ff0000; /* Highlight the offer in red */
     margin-bottom: 1rem;
-    color: #ffcc25;
-    font-size: var(--small-font-size);
 }
 
-.review_title{
-    font-size: var(--small-font-size);
-    font-weight: var(--font-medium);
-    color: #000000;
-    margin-top: var(--mb-0-75);
+.offer_text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
 }
 
-.review_subtitle{
-    font-size: var(--tiny-font-size);
-    color: #000000;
-    margin-top: var(--mb-0-5);
+/* Thoughts Section Styling */
+.writing_slots {
+    background-color: #ffffff; /* Keeping thoughts section background white for contrast */
+    border: 1px solid #ddd;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 800px;
+    text-align: left;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 0.5rem; /* Reduced top margin to move it up */
 }
 
-.review_description{
-    padding: 0 4rem 0 0;
-    margin-bottom: var(--mb-2);
+.thoughts_title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
 }
 
-@media screen and (max-width: 992px) {
-    .review_container{
-        grid-template-columns: repeat(3, 273px);
-        row-gap: 2rem;
+.thoughts_text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+    .section_title {
+        font-size: 2rem;
     }
 
-    .review_img{
-        width: 220px;
-        margin-bottom: 2rem;
+    .intro_text, .offer_text, .thoughts_text {
+        font-size: 1rem;
     }
 
-    .review_star{
-        margin-top: 1rem;
-        color: #ffcc25;
-    }
-
-    .review_box{
-        padding: 0.75rem 0.5rem;
-    }
-
-    .review_data{
-        text-align: center;
-    }
-
-    .review_info{
-        justify-content: center;
-    }
-
-    .review_description{
-        padding: 0 5rem;
-        margin-bottom: 2rem;
+    .discount_offer, .writing_slots {
+        padding: 1.5rem;
     }
 }
 
-@media screen and (max-width: 776px) {
-    .review_container{
-        grid-template-columns: repeat(2, 1fr);
-        row-gap: 2rem;
-    }
-}
-
-@media screen and (max-width: 676px) {
-    .review_container{
-        grid-template-columns: repeat(1, 1fr);
-        row-gap: 2rem;
-        justify-items: center;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .review_info{
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .review_description{
-        padding: 0;
-    }
-}
-
-@media screen and (max-width: 350px) {
-    .review_info{
-        grid-template-columns: repeat(2, 1fr);
-    }
+/* Prevent scrolling on the body */
+body {
+    overflow: hidden; /* Prevents scrolling for the entire body */
 }

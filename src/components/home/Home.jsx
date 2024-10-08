@@ -1,6 +1,6 @@
-import React from 'react'
-import "./home.css"
-import Data from './Data'
+import React from 'react';
+import "./home.css";
+import Data from './Data';
 
 const Home = () => {
     return (
@@ -13,7 +13,7 @@ const Home = () => {
                 </div>
             </div>
         </section>
-      )
+    );
 }
 
-export default Home
+export default Home;
