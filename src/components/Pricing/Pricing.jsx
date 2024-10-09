@@ -9,7 +9,7 @@ function Pricing() {
 
       {/* Discount Alert */}
       <div className="discount_alert">
-        <p className="alert_message">25% Off for the first 5 websites!</p>
+        <p className="alert_message">25% Off for the first 5 websites sold!</p>
       </div>
 
       <div className="pricing_container">
@@ -19,21 +19,18 @@ function Pricing() {
             <h1 className="pricing_title">Small Website (Basic)</h1>
             <p className="pricing_price">$?</p>
             <p className="pricing_info">5-10 Pages</p>
-            <p className="pricing_info">Includes 5 revisions</p>
           </div>
 
           <div className="pricing_card">
             <h1 className="pricing_title">Normal Website (Basic)</h1>
             <p className="pricing_price">$?</p>
-            <p className="pricing_info">Access to all features</p>
-            <p className="pricing_info">Priority customer support</p>
+            <p className="pricing_info">11-20 Pages</p>
           </div>
 
           <div className="pricing_card">
             <h1 className="pricing_title">Large Website (Basic)</h1>
             <p className="pricing_price">$?</p>
-            <p className="pricing_info">Access to all features</p>
-            <p className="pricing_info">Dedicated account manager</p>
+            <p className="pricing_info">20+ Pages</p>
           </div>
         </div>
 
@@ -42,44 +39,37 @@ function Pricing() {
           <div className="pricing_card">
             <h1 className="pricing_title">Moderate Small Website</h1>
             <p className="pricing_price">$?</p>
-            <p className="pricing_info">Extra feature 1</p>
-            <p className="pricing_info">Extra feature 2</p>
           </div>
 
           <div className="pricing_card">
             <h1 className="pricing_title">Complex Small Website</h1>
             <p className="pricing_price">$?</p>
-            <p className="pricing_info">Extra feature 1</p>
-            <p className="pricing_info">Extra feature 2</p>
           </div>
 
           <div className="pricing_card">
             <h1 className="pricing_title">Moderate Normal Website</h1>
             <p className="pricing_price">$?</p>
-            <p className="pricing_info">Extra feature 1</p>
-            <p className="pricing_info">Extra feature 2</p>
           </div>
 
           <div className="pricing_card">
             <h1 className="pricing_title">Complex Normal Website</h1>
             <p className="pricing_price">$?</p>
-            <p className="pricing_info">Extra feature 1</p>
-            <p className="pricing_info">Extra feature 2</p>
           </div>
 
           <div className="pricing_card">
             <h1 className="pricing_title">Moderate Large Website</h1>
             <p className="pricing_price">$?</p>
-            <p className="pricing_info">Extra feature 1</p>
-            <p className="pricing_info">Extra feature 2</p>
           </div>
 
           <div className="pricing_card">
             <h1 className="pricing_title">Complex Large Website</h1>
             <p className="pricing_price">$?</p>
-            <p className="pricing_info">Extra feature 1</p>
-            <p className="pricing_info">Extra feature 2</p>
           </div>
+        </div>
+
+        {/* Contact Section */}
+        <div className="contact_info">
+          <p>Contact us to explore the full range of services we offer, including website design, development, and maintenance. Let’s work together to determine the best plan and pricing for your needs!</p>
         </div>
       </div>
     </section>

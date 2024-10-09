@@ -57,14 +57,47 @@
 .discount_alert {
     background-color: rgba(255, 0, 0, 0.2); /* Light red background for visibility */
     color: red; /* Red text color */
-    font-size: 1rem; /* Slightly larger font size for emphasis */
+    font-size: 1.2rem; /* Slightly larger font size for emphasis */
     font-weight: bold; /* Make the text bold */
     position: absolute; /* Positioning */
     top: 70px; /* Adjust distance from the top as needed */
     right: 20px; /* Position on the right */
-    padding: 10px; /* Add padding for better spacing */
+    padding: 15px; /* Add padding for better spacing */
     border: 2px solid red; /* Red border to make it pop */
-    border-radius: 5px; /* Rounded corners */
+    border-radius: 8px; /* Rounded corners */
     text-align: center; /* Center align text */
     z-index: 1000; /* Ensure it appears above other content */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    max-width: 300px; /* Set a max width for better control */
+}
+
+/* Contact Us Box for Additional Services */
+.contact_services {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgba(0, 0, 255, 0.1); /* Light blue background */
+    border: 1px solid #0000ff; /* Blue border to match the design */
+    color: #000;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 8px; /* Smooth rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 80%; /* Keep it within a nice margin */
+    margin-left: auto;
+    margin-right: auto; /* Centered horizontally */
+}
+
+.contact_services p {
+    margin: 0.5rem 0; /* Proper spacing */
+    font-weight: 500; /* Medium weight */
+}
+
+.contact_services a {
+    color: #ff0000; /* Red link to match the overall design */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contact_services a:hover {
+    text-decoration: underline;
 }

@@ -8,7 +8,7 @@ const Data = () => {
       </h1>
 
       <p className="home_description">
-        Welcome to Virzentuous, a startup dedicated to providing exceptional web development and design services at competitive prices.
+        Welcome to Virzentuous, a startup dedicated to providing exceptional web development and design services at competitive prices. We currently have developers with 5-10+ years of experience!
       </p>
 
       <a href="#contact" className="button button--flex">
